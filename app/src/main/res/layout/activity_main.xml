@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="85dp"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/brain_icon"
+            android:layout_height="85dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amita_bold"
+            android:text="@string/login"
+            android:textColor="#E9453A"
+            android:textSize="36sp"
+            app:fontFamily="@font/bellefair" />
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_name_ly"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            app:endIconCheckable="true"
+            app:helperTextTextColor="@color/red"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/user_name_et"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:hint="Username"
+                android:inputType="text"
+                android:drawableStart="@drawable/baseline_person_outline_24"
+                android:drawableTint="#F7AB25"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_ly"
+            android:layout_width="260dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#6D2E2E2E"
+            android:layout_height="wrap_content"
+            app:endIconCheckable="true"
+            app:helperTextTextColor="@color/red">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/password_et"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:hint="Password"
+                android:drawableStart="@drawable/lock_icon"
+                android:drawableTint="#F7AB25"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/accept_ly"
+            android:visibility="gone">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/accept_chb"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:text="Foydalanish shartlariga rozimisz"
+                android:textColor="@color/accept_txt_color"
+                android:textSize="12sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_btn"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:background="@drawable/button_login_bg"
+            android:fontFamily="@font/belgrano"
+            android:text="Send"
+            android:textColor="@color/red"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="Sign up"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</FrameLayout>
