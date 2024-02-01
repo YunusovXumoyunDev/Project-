@@ -197,6 +197,16 @@
             android:layout_below="@id/name_ly"
             android:layout_marginTop="24dp"
             android:gravity="center">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/character_0"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:textColor="@color/dark_pink"
+                android:textSize="18sp"
+                tools:text="0" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/character_1"
@@ -274,16 +284,7 @@
                 android:textSize="18sp"
                 tools:text="7" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/character_8"
-                android:layout_width="38dp"
-                android:layout_height="38dp"
-                android:layout_marginStart="4dp"
-                android:background="@drawable/button_bg"
-                android:gravity="center"
-                android:textColor="@color/dark_pink"
-                android:textSize="18sp"
-                tools:text="8" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -293,6 +294,16 @@
             android:layout_below="@id/characters_ly_1"
             android:layout_marginTop="8dp"
             android:gravity="center">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/character_8"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:textColor="@color/dark_pink"
+                android:textSize="18sp"
+                tools:text="8" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/character_9"
@@ -370,16 +381,7 @@
                 android:textSize="18sp"
                 tools:text="15" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/character_16"
-                android:layout_width="38dp"
-                android:layout_height="38dp"
-                android:layout_marginStart="4dp"
-                android:background="@drawable/button_bg"
-                android:gravity="center"
-                android:textColor="@color/dark_pink"
-                android:textSize="18sp"
-                tools:text="16" />
+
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
