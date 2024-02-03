@@ -51,7 +51,7 @@
                     android:layout_toEndOf="@+id/image_1"
                     android:scaleType="centerCrop"
                     app:shapeAppearanceOverlay="@style/RoundedCorner"
-                    tools:src="@drawable/dog" />
+                    android:src="@drawable/dog" />
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/image_3"
@@ -73,7 +73,7 @@
                     android:layout_toEndOf="@+id/image_3"
                     android:scaleType="centerCrop"
                     app:shapeAppearanceOverlay="@style/RoundedCorner"
-                    tools:src="@drawable/dog" />
+                    android:src="@drawable/dog" />
             </RelativeLayout>
         </LinearLayout>
 
